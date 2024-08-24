@@ -27,9 +27,8 @@ This project showcases proficiency in data preprocessing, handling class imbalan
    - Removed the 'Time' column as it is irrelevant.
    - Split the dataset into features (X) and target (y), where X contains all columns except 'Class', and y is the 'Class' column indicating fraud.
 
-Here’s a README section summarizing the implementation and results for the logistic regression model on the credit card dataset:
+![first](https://github.com/user-attachments/assets/f9717c6b-8806-4557-bc11-471ee6ccbe32)
 
----
 
 ## Logistic Regression Implementation
 
@@ -64,6 +63,7 @@ In this section, I implemented and evaluated a Logistic Regression model to clas
 
 **Confusion Matrix Heatmap:**
 
+![11](https://github.com/user-attachments/assets/d7518735-29b8-4ffc-8e94-51ef0cb058cf)
 
 ## Handling Class Imbalance
 
@@ -83,6 +83,9 @@ Given the significant class imbalance in the credit card fraud dataset, where th
 | 0     | 1.00      | 0.97   | 0.99     | 56,864  |
 | 1     | 0.06      | 0.92   | 0.11     | 98      |
 
+![22](https://github.com/user-attachments/assets/c2997517-717f-4b65-8305-6bf5fe5c0a8e)
+
+
 **Observations:**
 - The recall for the minority class improved significantly to 91.84%, indicating better detection of fraudulent transactions.
 - However, precision and F1-score for the minority class remained low, suggesting a higher number of false positives.
@@ -101,6 +104,8 @@ Given the significant class imbalance in the credit card fraud dataset, where th
 | 0     | 1.00      | 0.97   | 0.99     | 56,864  |
 | 1     | 0.06      | 0.93   | 0.11     | 98      |
 
+![33](https://github.com/user-attachments/assets/b84afcc3-d4cd-48bf-97ed-c7321046d2f4)
+
 **Observations:**
 - The recall for the minority class further improved to 92.86%, indicating a slight enhancement in detecting fraudulent transactions.
 - Similar to the oversampling approach, the F1-score remained low, highlighting the trade-off between recall and precision when handling class imbalance.
@@ -109,8 +114,6 @@ Given the significant class imbalance in the credit card fraud dataset, where th
 
 - Both oversampling and undersampling **improved** the model's ability to detect fraudulent transactions, as evidenced by the increased recall. However, these methods also led to a reduction in precision and F1-score, indicating the challenges of achieving high performance across all metrics when dealing with highly imbalanced datasets.
 - The choice between oversampling and undersampling depends on the specific requirements of the **application**, particularly the need for ** recall versus precision**.
-
----
 
 ### KMeans Clustering Implementation
 
@@ -151,21 +154,24 @@ To better understand the differences in performance between Logistic Regression 
 
 #### Accuracy Comparison
 
+![Acc](https://github.com/user-attachments/assets/89922060-24ff-4e58-9d86-7a0f5968b129)
 
 #### AUC Score Comparison
 
-
-#### F1 Score Comparison
-
+![AUC](https://github.com/user-attachments/assets/400ce05e-3334-448b-b241-ea28b722acad)
 
 #### Recall Score Comparison
 
+![Recall](https://github.com/user-attachments/assets/8fa8bbef-95cb-446b-9621-a5240fa439f8)
 
 ### Correlation Matrices for Clusters
 
 Finally, correlation matrices were plotted for each cluster to understand the relationships between the features.
 
 #### Correlation Matrix for Cluster 1
+![hm1](https://github.com/user-attachments/assets/966b8721-a611-4e34-a913-8105199542e9)
 
 
 #### Correlation Matrix for Cluster 2
+![hm2](https://github.com/user-attachments/assets/809db49c-0ac0-4eab-b85e-6ce2340fb15b)
+
